@@ -68,32 +68,26 @@ const howItWorks = [
     description: "Execute the strategy and watch your food business thrive.",
   },
 ];
-
 const faqs = [
   {
     question: "How do I book a consultation session?",
     answer:
-      "You can book a session by clicking the 'Book a Call' button which connects you directly via WhatsApp. Share your requirements, and we'll schedule a convenient time slot within 24-48 hours.",
+      "Consultation sessions are launching soon. Once available, you can book a session directly through our website to schedule a convenient time slot.",
   },
   {
     question: "What happens during the consultation?",
     answer:
-      "We start by understanding your current situation, challenges, and goals. Then we dive deep into solutions — whether it's business planning, product formulation, regulatory compliance, or manufacturing setup. You'll leave with a clear, actionable plan.",
-  },
-  {
-    question: "Do you offer follow-up support?",
-    answer:
-      "Yes! After each session, you'll receive a summary document with key action items. We also offer follow-up email support for 7 days after your session to help with any questions that arise during implementation.",
+      "We start by understanding your current situation, challenges, and goals. Then we dive deep into solutions — whether it's business planning, regulatory compliance, or manufacturing setup. You'll leave with a clear, actionable plan.",
   },
   {
     question: "What's the pricing for consultation sessions?",
     answer:
-      "Pricing varies based on the type and duration of the session. Startup and Regulatory consultations are 60-minute sessions, while Product Formulation and Manufacturing Setup are 90-minute deep-dive sessions. Contact us via WhatsApp for current pricing.",
+      "Pricing varies based on the type and duration of the session. Startup and Regulatory consultations are 60-minute sessions, while Manufacturing Setup are 90-minute deep-dive sessions. Contact us via our contact form for more details.",
   },
   {
     question: "Can I get a consultation for a specific topic not listed here?",
     answer:
-      "Absolutely! While these are our core consulting areas, we're happy to discuss any food business challenge you're facing. Reach out via WhatsApp, and we'll create a custom session tailored to your needs.",
+      "Absolutely! While these are our core consulting areas, we're happy to discuss any food business challenge you're facing. Reach out via our contact form, and we'll create a custom session tailored to your needs.",
   },
 ];
 
@@ -189,20 +183,17 @@ export default function ConsultingPage() {
               variants={fadeInUp}
               className="text-lg sm:text-xl text-[var(--muted)] leading-relaxed max-w-2xl mx-auto mb-8"
             >
-              Get personalized guidance from an industry expert to fast-track
-              your food business success
+              Get personalized guidance to navigate the challenges of starting
+              and growing your food business in India
             </motion.p>
 
             <motion.div variants={fadeInUp}>
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white font-semibold rounded-xl btn-hover transition-colors"
+              <div
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--primary)]/10 text-[var(--primary)] font-semibold rounded-xl"
               >
-                Book a Free Discovery Call
-                <ArrowRight className="w-5 h-5" />
-              </a>
+                <Clock className="w-5 h-5" />
+                Launching Soon
+              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -292,15 +283,11 @@ export default function ConsultingPage() {
 
                     {/* CTA button pushed to bottom */}
                     <div className="mt-auto">
-                      <a
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full py-3.5 px-6 bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white font-semibold rounded-xl btn-hover transition-colors flex items-center justify-center gap-2"
+                      <div
+                        className="w-full py-3.5 px-6 bg-[var(--surface)] text-[var(--muted)] font-semibold rounded-xl flex items-center justify-center gap-2 border border-[var(--border)]"
                       >
-                        Book Consultation
-                        <ArrowRight className="w-4 h-4" />
-                      </a>
+                        Launching Soon
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -336,14 +323,14 @@ export default function ConsultingPage() {
 
           <div className="relative max-w-5xl mx-auto">
             {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-16 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-[var(--primary)]/20 via-[var(--primary)]/40 to-[var(--primary)]/20" />
+            <div className="hidden md:block absolute top-8 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-[var(--primary)]/20 via-[var(--primary)]/40 to-[var(--primary)]/20" />
 
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-60px" }}
               variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8"
+              className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16"
             >
               {howItWorks.map((step) => (
                 <motion.div
@@ -419,7 +406,7 @@ export default function ConsultingPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6 }}
-            className="relative overflow-hidden rounded-3xl gradient-dark text-white p-8 sm:p-12 lg:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--secondary-dark)] to-[var(--primary-dark)] text-white p-8 sm:p-12 lg:p-16 text-center shadow-2xl"
           >
             {/* Decorative */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-[var(--primary)]/10 rounded-full blur-3xl" />
@@ -442,15 +429,12 @@ export default function ConsultingPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white font-semibold rounded-xl btn-hover transition-colors"
+                <div
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white/60 font-semibold rounded-xl border border-white/5"
                 >
-                  <Phone className="w-5 h-5" />
-                  Book a Call
-                </a>
+                  <Clock className="w-5 h-5" />
+                  Launching Soon
+                </div>
                 <Link
                   href="/products"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-colors"

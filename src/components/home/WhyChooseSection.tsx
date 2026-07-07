@@ -12,9 +12,9 @@ import {
 const values = [
   {
     icon: GraduationCap,
-    title: 'Industry Expertise',
+    title: 'Food Science Foundation',
     description:
-      'Deep knowledge in food science, technology, and business backed by real industry experience.',
+      'Grounded in food science, technology, and business fundamentals — researched and curated for Indian entrepreneurs.',
   },
   {
     icon: BookOpen,
@@ -24,9 +24,9 @@ const values = [
   },
   {
     icon: TrendingUp,
-    title: 'Proven Results',
+    title: 'Mission-Driven',
     description:
-      '500+ entrepreneurs have used our guides and consulting to successfully launch and grow their food businesses.',
+      'Every resource is created with one goal — helping you build a successful food business with confidence and clarity.',
   },
   {
     icon: Headphones,

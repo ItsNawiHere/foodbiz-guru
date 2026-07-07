@@ -11,6 +11,7 @@ import {
   Sparkles,
   CheckCircle,
   X,
+  Clock,
 } from 'lucide-react';
 import { FREE_RESOURCES, SITE_CONFIG } from '@/lib/constants';
 
@@ -155,65 +156,19 @@ export default function ResourcesPage() {
                       {resource.description}
                     </p>
 
-                    {/* Download Count */}
+                    {/* Category */}
                     <div className="flex items-center gap-2 mb-6 text-sm text-muted-light">
                       <Download className="w-4 h-4" />
-                      <span>{resource.downloadCount} downloads</span>
+                      <span>Free Download</span>
                     </div>
 
                     {/* Download / Email Capture */}
-                    {downloadingId === resource.id ? (
-                      <motion.form
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        onSubmit={handleEmailSubmit}
-                        className="space-y-3"
-                      >
-                        <p className="text-sm font-medium text-secondary-dark">
-                          Enter your email to download
-                        </p>
-                        <div className="flex gap-2">
-                          <div className="relative flex-1">
-                            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-light" />
-                            <input
-                              type="email"
-                              value={email}
-                              onChange={(e) => setEmail(e.target.value)}
-                              placeholder="you@email.com"
-                              required
-                              className="w-full pl-10 pr-3 py-2.5 text-sm border border-border rounded-xl focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-                            />
-                          </div>
-                          <button
-                            type="submit"
-                            className="flex-shrink-0 px-4 py-2.5 bg-primary hover:bg-primary-dark text-white text-sm font-semibold rounded-xl transition-colors duration-300"
-                          >
-                            <Download className="w-4 h-4" />
-                          </button>
-                        </div>
-                        <button
-                          type="button"
-                          onClick={() => setDownloadingId(null)}
-                          className="text-xs text-muted-light hover:text-muted transition-colors"
-                        >
-                          Cancel
-                        </button>
-                      </motion.form>
-                    ) : submitted.includes(resource.id) ? (
-                      <div className="flex items-center gap-2 text-sm text-primary font-semibold">
-                        <CheckCircle className="w-5 h-5" />
-                        Download link sent to your email!
-                      </div>
-                    ) : (
-                      <button
-                        onClick={() => handleDownloadClick(resource.id)}
-                        className="group/btn inline-flex items-center gap-2 px-6 py-3 w-full justify-center border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold rounded-xl transition-all duration-300"
-                      >
-                        Download Free
-                        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                      </button>
-                    )}
+                    <div
+                      className="group/btn inline-flex items-center gap-2 px-6 py-3 w-full justify-center bg-[var(--surface)] text-[var(--muted)] font-semibold rounded-xl border border-[var(--border)] cursor-not-allowed transition-all duration-300"
+                    >
+                      <Clock className="w-4 h-4" />
+                      Launching Soon
+                    </div>
                   </div>
                 </motion.div>
               ))}

@@ -36,9 +36,9 @@ const floatVariants = {
 };
 
 const stats = [
-  { value: '500+', label: 'Guides Sold' },
-  { value: '50+', label: 'Resources' },
-  { value: '100+', label: 'Consultations' },
+  { label: 'Practical Guides' },
+  { label: 'Free Resources' },
+  { label: 'Expert Consulting' },
 ];
 
 export function HeroSection() {
@@ -52,7 +52,7 @@ export function HeroSection() {
       </div>
 
       <div className="container-custom relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 py-16 md:py-20 lg:py-28">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-12 py-12 md:py-16 lg:py-12">
           {/* Left Content */}
           <motion.div
             className="flex-1 text-center lg:text-left max-w-2xl"
@@ -63,8 +63,8 @@ export function HeroSection() {
             {/* Badge */}
             <motion.div variants={itemVariants} className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-light/60 border border-primary/15 text-primary-dark text-sm font-medium backdrop-blur-sm">
-                <span className="text-base">🎓</span>
-                Trusted by 500+ Food Entrepreneurs
+                <span className="text-base">🚀</span>
+                Your Food Business Journey Starts Here
               </span>
             </motion.div>
 
@@ -84,9 +84,8 @@ export function HeroSection() {
               variants={itemVariants}
               className="text-lg md:text-xl text-muted leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Learn food business setup, product formulation, licensing,
-              manufacturing, compliance, and growth through practical guides and
-              expert insights.
+              Learn food business setup, licensing, manufacturing, compliance, 
+              and growth through practical guides and expert insights.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -105,7 +104,7 @@ export function HeroSection() {
                 href="/consulting"
                 className="group px-8 py-4 rounded-full text-lg font-semibold border-2 border-secondary-dark text-secondary-dark inline-flex items-center gap-2 btn-hover hover:bg-secondary-dark hover:text-white transition-colors w-full sm:w-auto justify-center"
               >
-                Book a Consultation
+                Consulting (Launching Soon)
               </Link>
             </motion.div>
 
@@ -120,10 +119,7 @@ export function HeroSection() {
                     <div className="w-px h-10 bg-border hidden sm:block -ml-3 mr-0" />
                   )}
                   <div>
-                    <div className="text-2xl font-bold text-secondary-dark">
-                      {stat.value}
-                    </div>
-                    <div className="text-sm text-muted">{stat.label}</div>
+                    <div className="text-lg font-bold text-secondary-dark">{stat.label}</div>
                   </div>
                 </div>
               ))}

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Expert Food Business Consulting",
   description:
-    "Get personalized guidance from a food industry expert. Consulting services for food startups, product formulation, FSSAI compliance, and manufacturing setup in India.",
+    "Get personalized guidance for your food business. Consulting services for food startups, product formulation, FSSAI compliance, and manufacturing setup in India.",
   openGraph: {
     title: "Expert Food Business Consulting | FoodBiz Guru",
     description:

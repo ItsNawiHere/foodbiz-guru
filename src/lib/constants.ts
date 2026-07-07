@@ -37,8 +37,8 @@ export const PRODUCTS = [
     subtitle: "Complete Business Plan Guide",
     description:
       "A step-by-step guide to planning, launching, and scaling your food startup in India. Covers business model, market analysis, funding, and operations.",
-    price: 499,
-    originalPrice: 999,
+    price: 99,
+    originalPrice: 249,
     currency: "INR",
     category: "Business",
     features: [
@@ -48,7 +48,7 @@ export const PRODUCTS = [
       "Step-by-step launch checklist",
       "Funding & investor pitch guide",
     ],
-    badge: "Bestseller",
+    badge: "Comprehensive",
     icon: "🚀",
   },
   {
@@ -57,8 +57,8 @@ export const PRODUCTS = [
     subtitle: "Complete Regulatory Handbook",
     description:
       "Everything you need to know about FSSAI registration, licensing, and compliance. Includes application walkthroughs, document checklists, and renewal procedures.",
-    price: 399,
-    originalPrice: 799,
+    price: 149,
+    originalPrice: 399,
     currency: "INR",
     category: "Regulatory",
     features: [
@@ -68,37 +68,18 @@ export const PRODUCTS = [
       "Compliance requirements matrix",
       "Renewal & modification procedures",
     ],
-    badge: "Popular",
+    badge: "Essential",
     icon: "📋",
   },
-  {
-    id: "food-product-formulation",
-    title: "Food Product Formulation Guide",
-    subtitle: "R&D to Market-Ready Products",
-    description:
-      "Learn how to develop food products from concept to shelf. Covers ingredient selection, formulation basics, shelf-life testing, and nutritional labelling.",
-    price: 599,
-    originalPrice: 1199,
-    currency: "INR",
-    category: "Product Development",
-    features: [
-      "Formulation development process",
-      "Ingredient sourcing strategies",
-      "Shelf-life testing protocols",
-      "Nutritional analysis guide",
-      "Product costing framework",
-    ],
-    badge: "New",
-    icon: "🧪",
-  },
+
   {
     id: "food-manufacturing-setup",
     title: "Food Manufacturing Setup Guide",
     subtitle: "Factory to Production Line",
     description:
       "Complete guide to setting up a food manufacturing unit in India. From facility design to equipment selection, hygiene standards, and quality control systems.",
-    price: 499,
-    originalPrice: 999,
+    price: 349,
+    originalPrice: 799,
     currency: "INR",
     category: "Manufacturing",
     features: [
@@ -118,7 +99,7 @@ export const PRODUCTS = [
     description:
       "Master food packaging regulations, label design requirements, and material selection. Includes FSSAI labelling norms, barcode setup, and packaging cost optimization.",
     price: 349,
-    originalPrice: 699,
+    originalPrice: 799,
     currency: "INR",
     category: "Packaging",
     features: [
@@ -138,7 +119,7 @@ export const PRODUCTS = [
     description:
       "Navigate the export process for food products from India. Covers APEDA registration, export documentation, international compliance, and market entry strategies.",
     price: 449,
-    originalPrice: 899,
+    originalPrice: 999,
     currency: "INR",
     category: "Export",
     features: [
@@ -169,21 +150,7 @@ export const CONSULTING_SERVICES = [
     ],
     duration: "60-minute session",
   },
-  {
-    id: "product-formulation",
-    title: "Product Formulation Support",
-    description:
-      "Technical support for developing food products. From ingredient selection to shelf-life optimization and nutritional profiling.",
-    icon: "FlaskConical",
-    features: [
-      "Recipe development guidance",
-      "Ingredient sourcing support",
-      "Shelf-life optimization",
-      "Nutritional profiling",
-      "Cost optimization",
-    ],
-    duration: "90-minute session",
-  },
+
   {
     id: "regulatory-guidance",
     title: "Regulatory Guidance",
@@ -224,7 +191,6 @@ export const FREE_RESOURCES = [
       "A comprehensive checklist covering everything you need to start a food business in India — from idea validation to your first sale.",
     category: "Checklist",
     icon: "✅",
-    downloadCount: "2,500+",
   },
   {
     id: "fssai-document-checklist",
@@ -233,7 +199,6 @@ export const FREE_RESOURCES = [
       "Complete list of documents required for FSSAI registration and licensing. Never miss a document again.",
     category: "Checklist",
     icon: "📄",
-    downloadCount: "3,200+",
   },
   {
     id: "food-labelling-template",
@@ -242,7 +207,6 @@ export const FREE_RESOURCES = [
       "Ready-to-use food label template that complies with FSSAI regulations. Just fill in your product details.",
     category: "Template",
     icon: "🏷️",
-    downloadCount: "1,800+",
   },
   {
     id: "product-costing-calculator",
@@ -251,16 +215,14 @@ export const FREE_RESOURCES = [
       "Excel template to calculate your food product costs accurately. Includes raw material, packaging, overhead, and margin calculations.",
     category: "Template",
     icon: "📊",
-    downloadCount: "2,100+",
   },
   {
     id: "food-business-glossary",
     title: "Food Industry Glossary",
     description:
-      "150+ essential food industry terms explained in simple language. Perfect for beginners entering the food business space.",
+      "Essential food industry terms explained in simple language. Perfect for beginners entering the food business space.",
     category: "Guide",
     icon: "📚",
-    downloadCount: "1,500+",
   },
   {
     id: "gmp-checklist",
@@ -269,7 +231,6 @@ export const FREE_RESOURCES = [
       "Good Manufacturing Practices checklist for food production facilities. Ensure your factory meets quality and safety standards.",
     category: "Checklist",
     icon: "🔍",
-    downloadCount: "1,900+",
   },
 ];
 
@@ -281,49 +242,43 @@ export const BLOG_CATEGORIES = [
   { label: "Manufacturing", slug: "manufacturing" },
   { label: "Food Safety", slug: "food-safety" },
   { label: "Packaging", slug: "packaging" },
-  { label: "Career Guidance", slug: "career-guidance" },
 ];
 
-export const TESTIMONIALS = [
+export const CORE_PRINCIPLES = [
   {
-    name: "Priya Sharma",
-    role: "Founder, OrganicBites",
-    quote:
-      "The Food Startup Blueprint gave me a clear roadmap. I went from confused to confident in just a week. My organic snacks brand launched 3 months ahead of schedule!",
-    rating: 5,
-    avatar: "PS",
+    title: "Practical Over Theory",
+    category: "Learning Philosophy",
+    statement:
+      "Actionable, real-world steps over textbook theory. Learn by doing.",
+    icon: "🎯",
   },
   {
-    name: "Rajesh Kumar",
-    role: "Food Technologist",
-    quote:
-      "The FSSAI Guide saved me hours of research. Everything is explained so clearly. I got my license approved in the first attempt — something I couldn't do in 3 previous tries.",
-    rating: 5,
-    avatar: "RK",
+    title: "Honest & Transparent",
+    category: "Our Promise",
+    statement:
+      "No exaggerated claims. Just clear, actionable knowledge you can trust.",
+    icon: "🤝",
   },
   {
-    name: "Anita Desai",
-    role: "Home Baker turned Entrepreneur",
-    quote:
-      "From my kitchen to a small factory — the Manufacturing Setup Guide was my companion throughout. The consulting session helped me avoid costly mistakes.",
-    rating: 5,
-    avatar: "AD",
+    title: "Built for Beginners",
+    category: "Accessibility",
+    statement:
+      "Designed to meet you where you are, whether you're a student or founder.",
+    icon: "🌱",
   },
   {
-    name: "Vikram Singh",
-    role: "CEO, SpiceTrail Exports",
-    quote:
-      "The Export Documentation Guide made international trade feel simple. We successfully exported our first consignment to the UAE within 4 months of following the guide.",
-    rating: 5,
-    avatar: "VS",
+    title: "Constantly Evolving",
+    category: "Commitment",
+    statement:
+      "Our guides evolve with the industry so you always have current info.",
+    icon: "🔄",
   },
   {
-    name: "Meera Patel",
-    role: "Food Science Student",
-    quote:
-      "As a student, the free resources and blog posts have been invaluable. I feel so much more prepared for my career in the food industry. Highly recommend FoodBiz Guru!",
-    rating: 5,
-    avatar: "MP",
+    title: "Community First",
+    category: "Vision",
+    statement:
+      "A supportive community of food entrepreneurs learning and growing together.",
+    icon: "💡",
   },
 ];
 
@@ -337,10 +292,10 @@ export const ROADMAP_STEPS = [
   },
   {
     step: 2,
-    title: "Product Development",
+    title: "Branding & Positioning",
     description:
-      "Develop your recipe, formulation, and get your product shelf-life tested.",
-    icon: "FlaskConical",
+      "Develop your brand identity, packaging design, and market positioning strategy.",
+    icon: "Target",
   },
   {
     step: 3,

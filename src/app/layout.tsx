@@ -75,6 +75,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full`}
+      suppressHydrationWarning
     >
       <head>
         {/* Google Analytics — Replace G-XXXXXXXXXX with your actual GA4 ID */}
@@ -95,7 +96,7 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className="min-h-full flex flex-col font-[family-name:var(--font-body)] antialiased">
+      <body className="min-h-full flex flex-col font-[family-name:var(--font-body)] antialiased" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

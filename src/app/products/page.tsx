@@ -45,7 +45,7 @@ const faqs = [
   {
     question: "Can I get a refund?",
     answer:
-      "We offer a 7-day satisfaction guarantee. If you're not happy with the guide, reach out to us within 7 days of purchase and we'll process a full refund — no questions asked.",
+      "We do not offer refunds, but we can provide free additional support to help you get the most out of your guides.",
   },
   {
     question: "Are the guides updated regularly?",
@@ -107,7 +107,7 @@ function FAQItem({
 }
 
 export default function ProductsPage() {
-  const bundlePrice = 1999;
+  const bundlePrice = 1099;
   const bundleOriginalPrice = PRODUCTS.reduce((sum, p) => sum + p.originalPrice, 0);
   const bundleSavePercent = Math.round(
     ((bundleOriginalPrice - bundlePrice) / bundleOriginalPrice) * 100
@@ -242,13 +242,9 @@ export default function ProductsPage() {
                       </span>
                     </div>
 
-                    <button className="w-full py-3.5 px-6 bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white font-semibold rounded-xl btn-hover transition-colors flex items-center justify-center gap-2">
-                      <ShoppingBag className="w-4 h-4" />
-                      Buy Now
-                    </button>
-                    <p className="text-xs text-[var(--muted-light)] text-center mt-2">
-                      Razorpay payments coming soon
-                    </p>
+                    <div className="w-full py-3.5 px-6 bg-[var(--surface)] text-[var(--muted)] font-semibold rounded-xl flex items-center justify-center gap-2 border border-[var(--border)]">
+                      Launching Soon
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -285,7 +281,7 @@ export default function ProductsPage() {
                   </div>
 
                   <h2 className="text-2xl sm:text-3xl font-[family-name:var(--font-heading)] font-bold text-[var(--secondary-dark)] mb-4">
-                    Get All 6 Guides —{" "}
+                    Get all guides —{" "}
                     <span className="gradient-text-primary">
                       Complete Food Business Bundle
                     </span>
@@ -320,13 +316,12 @@ export default function ProductsPage() {
                     </div>
                   </div>
 
-                  <button
-                    disabled
-                    className="w-full sm:w-auto px-10 py-4 bg-[var(--muted-light)] text-white font-semibold rounded-xl cursor-not-allowed flex items-center justify-center gap-2 mx-auto lg:mx-0"
+                  <div
+                    className="w-full sm:w-auto px-10 py-4 bg-[var(--surface)] text-[var(--muted)] font-semibold rounded-xl flex items-center justify-center gap-2 mx-auto lg:mx-0 border border-[var(--border)]"
                   >
                     <Package className="w-5 h-5" />
-                    Coming Soon
-                  </button>
+                    Launching Soon
+                  </div>
                   <p className="text-xs text-[var(--muted-light)] mt-2">
                     Bundle pricing will be available with Razorpay integration
                   </p>

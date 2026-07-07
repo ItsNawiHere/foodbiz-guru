@@ -2,8 +2,8 @@
 
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useRef, useState, useEffect, useCallback } from 'react';
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import { TESTIMONIALS } from '@/lib/constants';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { CORE_PRINCIPLES } from '@/lib/constants';
 
 export function TestimonialsSection() {
   const ref = useRef<HTMLDivElement>(null);
@@ -28,7 +28,7 @@ export function TestimonialsSection() {
     return () => window.removeEventListener('resize', handleResize);
   }, [getVisibleCount]);
 
-  const maxIndex = Math.max(0, TESTIMONIALS.length - visibleCount);
+  const maxIndex = Math.max(0, CORE_PRINCIPLES.length - visibleCount);
 
   const next = useCallback(() => {
     setDirection(1);
@@ -43,11 +43,11 @@ export function TestimonialsSection() {
   // Auto-scroll
   useEffect(() => {
     if (!isInView) return;
-    const timer = setInterval(next, 5000);
+    const timer = setInterval(next, 6500);
     return () => clearInterval(timer);
   }, [isInView, next]);
 
-  const visibleTestimonials = TESTIMONIALS.slice(
+  const visiblePrinciples = CORE_PRINCIPLES.slice(
     currentIndex,
     currentIndex + visibleCount
   );
@@ -63,32 +63,32 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary-light/60 text-primary-dark text-sm font-medium mb-4">
-            Testimonials
+            Our Values
           </span>
           <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-dark mb-4">
-            What Our{' '}
-            <span className="gradient-text-primary">Community</span> Says
+            What FoodBiz Guru{' '}
+            <span className="gradient-text-primary">Stands For</span>
           </h2>
           <p className="text-lg text-muted leading-relaxed">
-            Real stories from real entrepreneurs who transformed their food
-            business journey with FoodBiz Guru.
+            The principles that guide everything we create and share with
+            aspiring food entrepreneurs.
           </p>
         </motion.div>
 
-        {/* Testimonials Carousel */}
+        {/* Principles Carousel */}
         <div className="relative">
           {/* Navigation Buttons */}
           <button
             onClick={prev}
             className="absolute -left-3 md:-left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg border border-border-light flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all"
-            aria-label="Previous testimonial"
+            aria-label="Previous principle"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={next}
             className="absolute -right-3 md:-right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg border border-border-light flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all"
-            aria-label="Next testimonial"
+            aria-label="Next principle"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -105,43 +105,38 @@ export function TestimonialsSection() {
                 transition={{ duration: 0.4 }}
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
               >
-                {visibleTestimonials.map((testimonial) => (
+                {visiblePrinciples.map((principle) => (
                   <div
-                    key={testimonial.name}
+                    key={principle.title}
                     className="bg-white rounded-2xl p-7 shadow-sm border border-border-light border-l-4 border-l-primary/60 hover:shadow-md transition-shadow relative"
                   >
-                    {/* Quote icon */}
+                    {/* Icon */}
                     <div className="absolute top-5 right-5">
-                      <Quote className="w-8 h-8 text-primary/10" />
+                      <span className="text-3xl opacity-20">{principle.icon}</span>
                     </div>
 
-                    {/* Stars */}
+                    {/* Category Badge */}
                     <div className="flex items-center gap-0.5 mb-4">
-                      {Array.from({ length: testimonial.rating }).map(
-                        (_, i) => (
-                          <Star
-                            key={i}
-                            className="w-4 h-4 text-amber-400 fill-amber-400"
-                          />
-                        )
-                      )}
+                      <span className="inline-block px-3 py-1 rounded-full bg-primary-50 text-primary-dark text-xs font-medium">
+                        {principle.category}
+                      </span>
                     </div>
 
-                    {/* Quote Text */}
+                    {/* Statement Text */}
                     <p className="text-secondary-dark/80 leading-relaxed mb-6 text-[15px]">
-                      &ldquo;{testimonial.quote}&rdquo;
+                      &ldquo;{principle.statement}&rdquo;
                     </p>
 
-                    {/* Author */}
+                    {/* Title */}
                     <div className="flex items-center gap-3 pt-4 border-t border-border-light">
-                      <div className="w-11 h-11 rounded-full gradient-primary flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
-                        {testimonial.avatar}
+                      <div className="w-11 h-11 rounded-full gradient-primary flex items-center justify-center text-white text-lg flex-shrink-0">
+                        {principle.icon}
                       </div>
                       <div>
                         <p className="font-semibold text-secondary-dark text-sm">
-                          {testimonial.name}
+                          {principle.title}
                         </p>
-                        <p className="text-xs text-muted">{testimonial.role}</p>
+                        <p className="text-xs text-muted">Core Principle</p>
                       </div>
                     </div>
                   </div>

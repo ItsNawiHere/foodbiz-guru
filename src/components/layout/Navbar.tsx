@@ -3,7 +3,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Leaf, Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight, Leaf } from 'lucide-react';
+import Image from 'next/image';
 import { NAV_LINKS } from '@/lib/constants';
 
 export function Navbar() {
@@ -59,13 +60,13 @@ export function Navbar() {
               className="relative flex items-center gap-2 group"
               onClick={closeMobileMenu}
             >
-              <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
-                <Leaf className="w-5 h-5 text-primary transition-transform duration-300 group-hover:rotate-12" />
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--primary)]/20 group-hover:bg-[var(--primary)]/30 transition-colors duration-300">
+                <Leaf className="w-4 h-4 text-[var(--primary)] transition-transform duration-300 group-hover:rotate-12" />
               </span>
               <span className="font-[family-name:var(--font-heading)] text-xl lg:text-2xl font-bold tracking-tight">
-                <span className="text-secondary-dark">Food</span>
-                <span className="text-primary">Biz</span>
-                <span className="text-secondary-dark"> Guru</span>
+                <span className="text-[var(--secondary-dark)]">Food</span>
+                <span className="text-[var(--primary)]">Biz</span>
+                <span className="text-[var(--secondary-dark)]">Guru</span>
               </span>
             </Link>
 
@@ -143,13 +144,13 @@ export function Navbar() {
         {/* Drawer Header */}
         <div className="flex items-center justify-between px-6 h-[72px] border-b border-border-light">
           <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-            <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10">
-              <Leaf className="w-4 h-4 text-primary" />
+            <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--primary)]/20">
+              <Leaf className="w-4 h-4 text-[var(--primary)]" />
             </span>
             <span className="font-[family-name:var(--font-heading)] text-lg font-bold">
-              <span className="text-secondary-dark">Food</span>
-              <span className="text-primary">Biz</span>
-              <span className="text-secondary-dark"> Guru</span>
+              <span className="text-[var(--secondary-dark)]">Food</span>
+              <span className="text-[var(--primary)]">Biz</span>
+              <span className="text-[var(--secondary-dark)]">Guru</span>
             </span>
           </Link>
           <button

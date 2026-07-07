@@ -14,7 +14,6 @@ const categoryColors: Record<string, string> = {
   Manufacturing: 'bg-orange-50 text-orange-700',
   'Food Safety': 'bg-red-50 text-red-700',
   Packaging: 'bg-amber-50 text-amber-700',
-  'Career Guidance': 'bg-cyan-50 text-cyan-700',
   Uncategorized: 'bg-gray-50 text-gray-700',
 };
 

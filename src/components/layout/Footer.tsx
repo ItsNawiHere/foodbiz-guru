@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Send, Leaf } from 'lucide-react';
+import Image from 'next/image';
 import { SITE_CONFIG } from '@/lib/constants';
 
 /* Inline SVG social icons (brand icons removed from lucide-react) */
@@ -55,14 +56,14 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 py-16 lg:py-20">
           {/* Column 1 — Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2.5 group mb-5">
-              <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300">
-                <Leaf className="w-5 h-5 text-primary transition-transform duration-300 group-hover:rotate-12" />
+            <Link href="/" className="inline-flex items-center gap-2.5 group mb-6">
+              <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--primary)]/20 group-hover:bg-[var(--primary)]/30 transition-colors duration-300">
+                <Leaf className="w-5 h-5 text-[var(--primary)] transition-transform duration-300 group-hover:rotate-12" />
               </span>
               <span className="font-[family-name:var(--font-heading)] text-xl font-bold tracking-tight">
                 <span className="text-white">Food</span>
-                <span className="text-primary">Biz</span>
-                <span className="text-white"> Guru</span>
+                <span className="text-[var(--primary)]">Biz</span>
+                <span className="text-white">Guru</span>
               </span>
             </Link>
             <p className="text-sm text-white/60 leading-relaxed mb-6 max-w-xs">

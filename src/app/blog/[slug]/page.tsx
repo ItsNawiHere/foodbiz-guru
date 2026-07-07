@@ -292,8 +292,8 @@ export default async function BlogPostPage({
                   Get Weekly Insights
                 </h3>
                 <p className="text-sm text-muted mb-4 leading-relaxed">
-                  Join 5,000+ food entrepreneurs getting actionable tips every
-                  week.
+                  Get actionable food business tips and industry insights
+                  delivered to your inbox.
                 </p>
                 <form className="space-y-3">
                   <input

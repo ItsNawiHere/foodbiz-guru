@@ -89,8 +89,8 @@ export function NewsletterSection() {
 
             {/* Heading */}
             <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Join{' '}
-              <span className="text-primary">2,000+</span> Food Entrepreneurs
+              Join Our{' '}
+              <span className="text-primary">Growing</span> Community of Food Entrepreneurs
             </h2>
             <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-lg mx-auto">
               Get weekly insights on food business, product development, and

@@ -39,21 +39,21 @@ const credentials = [
   },
   {
     icon: Briefcase,
-    title: "Industry Experience",
+    title: "Practical Industry Knowledge",
     description:
-      "Years of hands-on experience across food manufacturing, quality assurance, and product development.",
+      "A strong foundation in food manufacturing, quality assurance, and product development applied to real-world challenges.",
   },
   {
     icon: BookOpen,
-    title: "50+ Comprehensive Guides",
+    title: "Growing Resource Library",
     description:
-      "Authored detailed, actionable guides covering every aspect of starting a food business in India.",
+      "Practical guides covering every stage of starting a food business in India — with more being added regularly.",
   },
   {
     icon: Users,
-    title: "500+ Entrepreneurs Helped",
+    title: "Built for Entrepreneurs",
     description:
-      "Guided hundreds of aspiring food entrepreneurs through consulting and mentorship programs.",
+      "Everything on this platform is designed to help aspiring food business owners take confident first steps.",
   },
   {
     icon: Award,
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="inline-block text-sm font-semibold text-[var(--primary)] uppercase tracking-wider mb-3"
               >
-                My Story
+                Our Guru's Story
               </motion.span>
               <motion.h2
                 variants={fadeInUp}
@@ -141,30 +141,30 @@ export default function AboutPage() {
                 className="space-y-5 text-[var(--muted)] leading-relaxed text-base sm:text-lg"
               >
                 <p>
-                  Hi there! I&apos;m a <strong className="text-[var(--secondary)]">Food Science professional</strong> with
+                  Our founder is a <strong className="text-[var(--secondary)]">Food Technology professional</strong> with
                   a deep passion for making food industry knowledge accessible
                   to every aspiring entrepreneur in India.
                 </p>
                 <p>
-                  With a strong background in{" "}
+                  With a background in{" "}
                   <strong className="text-[var(--secondary)]">food technology, product development, and regulatory compliance</strong>,
-                  I&apos;ve spent years navigating the complexities of the Indian food
+                  they have been exploring and learning the complexities of the Indian food
                   industry — from FSSAI licensing to manufacturing setup, from
                   product formulation to export documentation.
                 </p>
                 <p>
-                  I realized that most of this critical knowledge was either
+                  They realized that most of this critical knowledge was either
                   scattered across the internet, locked behind expensive
                   consultants, or written in jargon that first-time entrepreneurs
-                  couldn&apos;t understand. That&apos;s why I created{" "}
+                  couldn't understand. That's why they created{" "}
                   <strong className="text-[var(--primary)]">FoodBiz Guru</strong> — to bridge
                   this gap and give every food entrepreneur the tools, knowledge,
                   and confidence to succeed.
                 </p>
                 <p>
-                  Whether you&apos;re a home baker dreaming of a bakery, a food
+                  Whether you're a home baker dreaming of a bakery, a food
                   technologist planning a startup, or an existing manufacturer
-                  looking to expand — I&apos;m here to guide you every step of the
+                  looking to expand — FoodBiz Guru is here to guide you every step of the
                   way.
                 </p>
               </motion.div>
@@ -184,10 +184,10 @@ export default function AboutPage() {
                   <div className="text-center p-8">
                     <div className="text-8xl mb-4">🧑‍🔬</div>
                     <p className="font-[family-name:var(--font-heading)] text-2xl font-bold text-[var(--secondary-dark)] mb-2">
-                      Food Scientist
+                      Food Technologist
                     </p>
                     <p className="text-[var(--muted)] text-sm">
-                      Entrepreneur &bull; Educator &bull; Mentor
+                      Food Technology Professional &bull; Entrepreneur
                     </p>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ export default function AboutPage() {
                       <BookOpen className="w-4 h-4 text-[var(--primary)]" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[var(--secondary-dark)]">50+</p>
+                      <p className="text-xs font-bold text-[var(--secondary-dark)]">6+</p>
                       <p className="text-[10px] text-[var(--muted)]">Guides</p>
                     </div>
                   </div>
@@ -219,8 +219,8 @@ export default function AboutPage() {
                       <Users className="w-4 h-4 text-[var(--primary)]" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[var(--secondary-dark)]">500+</p>
-                      <p className="text-[10px] text-[var(--muted)]">Helped</p>
+                      <p className="text-xs font-bold text-[var(--secondary-dark)]">100%</p>
+                      <p className="text-[10px] text-[var(--muted)]">Passion</p>
                     </div>
                   </div>
                 </motion.div>
@@ -296,7 +296,7 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-[var(--muted)] text-lg leading-relaxed">
                   To become India&apos;s most trusted platform for food business
-                  education, empowering 10,000+ food entrepreneurs by 2030.
+                  education, empowering the next generation of food entrepreneurs across India.
                 </p>
               </div>
             </motion.div>
@@ -324,7 +324,7 @@ export default function AboutPage() {
               variants={fadeInUp}
               className="text-3xl sm:text-4xl font-[family-name:var(--font-heading)] font-bold text-[var(--secondary-dark)] mb-4"
             >
-              Why Learn From Me?
+              Why Learn From Us?
             </motion.h2>
             <motion.p
               variants={fadeInUp}
@@ -371,7 +371,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6 }}
-            className="relative overflow-hidden rounded-3xl gradient-dark text-white p-8 sm:p-12 lg:p-16 text-center"
+            className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[var(--secondary-dark)] to-[var(--primary-dark)] text-white p-8 sm:p-12 lg:p-16 text-center shadow-2xl"
           >
             {/* Decorative elements */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--primary)]/10 rounded-full blur-3xl" />
@@ -386,13 +386,11 @@ export default function AboutPage() {
                 your food business idea into reality.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/consulting"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white font-semibold rounded-xl btn-hover transition-colors"
+                <div
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white/60 font-semibold rounded-xl border border-white/5"
                 >
-                  Book a Consultation
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
+                  Consulting (Launching Soon)
+                </div>
                 <Link
                   href="/products"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-colors"
