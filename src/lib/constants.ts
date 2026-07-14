@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   tagline: "Your Guide to Food Business Success in India",
   description:
     "Helping food entrepreneurs build, launch, and scale successful food businesses in India through practical guides, expert consulting, and industry resources.",
-  url: "https://foodbizguru.com",
+  url: "https://www.foodbizguru.in",
   email: "hello@foodbizguru.com",
   phone: "+91 99999 99999",
   whatsapp: "919999999999",
